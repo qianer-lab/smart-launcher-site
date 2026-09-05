@@ -14,13 +14,8 @@
 <body>
   <header class="site-header">
     <div class="shell nav-wrap">
-      <a class="brand" href="#top" aria-label="Smart Launcher home">
-        <span class="brand-mark" aria-hidden="true">SL</span><span>Smart Launcher</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#pricing">Pricing</a><a href="#download">Download</a><a href="./legal.html">Legal</a>
-        <a class="language-switch" href="./index-zh.html" data-set-lang="zh-Hans" lang="zh-Hans">中文</a>
-      </nav>
+      <a class="brand" href="#top" aria-label="Smart Launcher home"><span class="brand-mark" aria-hidden="true">SL</span><span>Smart Launcher</span></a>
+      <nav class="nav-links" aria-label="Primary navigation"><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#pricing">Pricing</a><a href="#download">Download</a><a href="./legal.html">Legal</a><a class="language-switch" href="./index-zh.html" data-set-lang="zh-Hans" lang="zh-Hans">中文</a></nav>
     </div>
   </header>
 
@@ -32,13 +27,13 @@
       <div class="hero-actions"><a class="button button-primary" href="#download">Get Smart Launcher</a><a class="button button-secondary" href="#pricing">Compare Free &amp; Pro</a></div>
       <p class="compatibility">Designed for macOS 15 Sequoia and later, including macOS 26 Tahoe.</p>
       <figure class="product-shot product-shot-hero">
-        <img src="./assets/screenshots/hero-smart-en.jpg" alt="Smart Launcher Smart page on macOS" width="1000" height="439" fetchpriority="high">
-        <figcaption>Real Smart Launcher UI · recommendations stay on your Mac</figcaption>
+        <img src="./assets/screenshots/hero-smart-en.png" alt="Complete Smart Launcher Smart page on macOS" width="3420" height="2224" fetchpriority="high">
+        <figcaption>Current Smart Launcher UI · complete Retina screenshot</figcaption>
       </figure>
     </section>
 
     <section id="features" class="section shell">
-      <div class="section-heading"><div class="eyebrow">Built for the Mac</div><h2>Classic when you want it. Smart when it helps.</h2><p>Use the familiar launcher grid every day, then switch to Smart when local usage signals can save you time.</p></div>
+      <div class="section-heading"><div class="eyebrow">Built for the Mac</div><h2>Classic when you want it. Smart when it helps.</h2><p>Smart Launcher keeps the familiar grid, folders and launching behavior, while Smart remains an optional layer above it.</p></div>
       <div class="feature-grid">
         <article class="feature-card"><div class="feature-symbol">⌘</div><h3>Classic Launchpad</h3><p>Keep the familiar grid, folders and app-launching behavior instead of relearning your desktop workflow.</p></article>
         <article class="feature-card"><div class="feature-symbol">✦</div><h3>Progressive Smart</h3><p>Recommendations mature over time—from cold start to personalized suggestions—without making Smart a requirement.</p></article>
@@ -47,20 +42,21 @@
         <article class="feature-card"><div class="feature-symbol">↔</div><h3>Universal App</h3><p>One application for Apple Silicon and Intel Macs, with support starting at macOS 15.</p></article>
         <article class="feature-card"><div class="feature-symbol">文</div><h3>English + Chinese</h3><p>Product UI supports English and Simplified Chinese while installed app names follow their own localized display names.</p></article>
       </div>
-      <div class="product-tour">
-        <div class="product-tour-copy"><div class="eyebrow">Real product UI</div><h3>Classic, local insights, and the 14-day Pro trial.</h3><p>These are screenshots from the current macOS build—not concept art or a web mock.</p></div>
-        <figure class="product-shot product-shot-wide"><img src="./assets/screenshots/showcase.jpg" alt="Smart Launcher Classic page, Usage Insights, and Pro trial setup" width="1200" height="330" loading="lazy"></figure>
+      <div class="screenshot-section">
+        <div class="screenshot-copy"><div class="eyebrow">Classic Launchpad</div><h3>The familiar launcher remains intact.</h3><p>The screenshot is shown in full, at its original aspect ratio, so folders, page controls and the complete desktop context remain visible.</p></div>
+        <figure class="product-shot product-shot-full"><img src="./assets/screenshots/classic-en.png" alt="Complete Smart Launcher Classic page" width="3420" height="2224" loading="lazy"></figure>
       </div>
     </section>
 
     <section id="privacy" class="section section-soft">
-      <div class="shell privacy-layout">
-        <div><div class="eyebrow">Privacy by architecture</div><h2>Your launcher should not become a surveillance service.</h2></div>
-        <div class="privacy-points">
-          <div><strong>Local-first Smart Engine</strong><span>Recommendations are designed around on-device activity signals rather than a required cloud AI backend.</span></div>
-          <div><strong>Explicit learning controls</strong><span>Local Learning and optional contextual signals are user-controlled.</span></div>
-          <div><strong>Inspectable evidence</strong><span>Usage Insights shows the local timing and pattern signals behind Smart recommendations.</span></div>
-          <a class="text-link" href="./legal.html#privacy-policy">Read the Privacy Policy →</a>
+      <div class="shell">
+        <div class="privacy-layout">
+          <div><div class="eyebrow">Privacy by architecture</div><h2>Your launcher should not become a surveillance service.</h2></div>
+          <div class="privacy-points"><div><strong>Local-first Smart Engine</strong><span>Recommendations are designed around on-device activity signals rather than a required cloud AI backend.</span></div><div><strong>Explicit learning controls</strong><span>Local Learning and optional contextual signals are user-controlled.</span></div><div><strong>Inspectable evidence</strong><span>Usage Insights makes local timing and usage-pattern signals visible to the user.</span></div><a class="text-link" href="./legal.html#privacy-policy">Read the Privacy Policy →</a></div>
+        </div>
+        <div class="screenshot-section screenshot-section-soft">
+          <div class="screenshot-copy"><div class="eyebrow">Usage Insights</div><h3>See what Smart is learning locally.</h3><p>Usage Insights exposes the local evidence behind recommendations instead of hiding it behind an opaque cloud profile.</p></div>
+          <figure class="product-shot product-shot-window"><img src="./assets/screenshots/usage-insights.png" alt="Complete Usage Insights window" width="1786" height="1248" loading="lazy"></figure>
         </div>
       </div>
     </section>
@@ -71,13 +67,14 @@
         <article class="price-card"><div class="price-kicker">Free</div><div class="price">$0</div><p class="price-copy">The complete core launcher experience.</p><ul><li>Classic launcher experience</li><li>Core Smart recommendations</li><li>Local Learning</li><li>Basic Calendar Context</li><li>Starter Smart Rules allowance</li></ul><a class="button button-secondary full" href="#download">Download Free</a></article>
         <article class="price-card price-card-pro"><div class="price-kicker">Pro</div><div class="price price-text">One-time license</div><p class="price-copy">Start with a 14-day local trial. No credit card is required to begin the trial.</p><ul><li>Everything in Free</li><li>Advanced Context</li><li>Advanced Calendar Intelligence</li><li>Expanded Smart Rules</li><li>Automation for user-approved rules</li></ul><span class="button button-disabled full" aria-disabled="true">Pro checkout coming soon</span></article>
       </div>
+      <div class="screenshot-section screenshot-section-trial">
+        <div class="screenshot-copy"><div class="eyebrow">14-day Pro trial</div><h3>Try Pro before buying.</h3><p>The trial is explicitly started by the user, requires no credit card, and keeps its trial state on the Mac.</p></div>
+        <figure class="product-shot product-shot-window"><img src="./assets/screenshots/pro-trial.png" alt="Complete Smart Launcher Pro trial setup window" width="1630" height="1302" loading="lazy"></figure>
+      </div>
       <p class="pricing-note">Paid checkout is planned through Dodo Payments. Dodo Payments acts as Merchant of Record for eligible digital-product transactions.</p>
     </section>
 
-    <section id="download" class="section section-dark">
-      <div class="shell download-layout"><div><div class="eyebrow light">Download</div><h2>Built for macOS 15 and later.</h2><p>Universal macOS application for Apple Silicon and Intel. The public DMG download will be published here when the release build is ready.</p></div><div class="download-card"><div class="download-icon">SL</div><div><strong>Smart Launcher for macOS</strong><span>DMG · Universal · Release pending</span></div><span class="button button-disabled-dark" aria-disabled="true">Coming soon</span></div></div>
-    </section>
-
+    <section id="download" class="section section-dark"><div class="shell download-layout"><div><div class="eyebrow light">Download</div><h2>Built for macOS 15 and later.</h2><p>Universal macOS application for Apple Silicon and Intel. The public DMG download will be published here when the release build is ready.</p></div><div class="download-card"><div class="download-icon">SL</div><div><strong>Smart Launcher for macOS</strong><span>DMG · Universal · Release pending</span></div><span class="button button-disabled-dark" aria-disabled="true">Coming soon</span></div></div></section>
     <section id="support" class="section shell support-section"><div><div class="eyebrow">Support</div><h2>Product and purchase support.</h2><p>Smart Launcher is currently in pre-release. Public support details and the production support email will be published before paid checkout is enabled.</p></div><div class="support-links"><a class="button button-secondary" href="https://github.com/qianer-lab" rel="noreferrer">Developer on GitHub</a><a class="text-link" href="./legal.html">Privacy, Terms &amp; Refunds →</a></div></section>
   </main>
 
