@@ -9,6 +9,20 @@
   box-shadow: none;
 }
 
+/* Home feature headline: one clean line on desktop, balanced wrapping on mobile. */
+#features > .section-heading {
+  max-width: none;
+}
+#features > .section-heading h2 {
+  font-size: clamp(34px, 3.8vw, 44px);
+  line-height: 1.04;
+  letter-spacing: -.045em;
+  white-space: nowrap;
+}
+#features > .section-heading p {
+  max-width: 1040px;
+}
+
 .product-shot { margin: 0; }
 .product-shot img { display: block; width: 100%; height: auto; object-fit: contain; border-radius: 26px; border: 1px solid rgba(0,0,0,.08); box-shadow: 0 30px 90px rgba(0,0,0,.16); background: #111; }
 .product-shot figcaption { margin-top: 12px; color: #86868b; font-size: 12px; text-align: center; }
@@ -23,8 +37,29 @@
 .product-shot-full { width: 100%; }
 .product-shot-window { width: min(920px,100%); margin-left: auto; margin-right: auto; }
 .product-shot-window img { background: #f5f5f7; }
+
+@media (max-width: 760px) {
+  #features > .section-heading h2 {
+    font-size: clamp(30px, 8.4vw, 36px);
+    line-height: 1.08;
+    white-space: normal;
+    text-wrap: balance;
+    line-break: strict;
+  }
+}
+
 @media (max-width: 620px) {
   .brand-mark { width: 34px; height: 34px; flex-basis: 34px; }
+  #features > .section-heading {
+    margin-bottom: 38px;
+  }
+  #features > .section-heading h2 {
+    letter-spacing: -.04em;
+  }
+  #features > .section-heading p {
+    margin-top: 18px;
+    font-size: 18px;
+  }
   .product-shot-hero { margin-top: 44px; }
   .product-shot img, .product-shot-hero img { border-radius: 20px; }
   .screenshot-section { margin-top: 52px; gap: 22px; }
