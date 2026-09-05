@@ -1,12 +1,19 @@
 .product-shot { margin: 0; }
-.product-shot img { display: block; width: 100%; height: auto; border-radius: 26px; border: 1px solid rgba(0,0,0,.08); box-shadow: 0 30px 90px rgba(0,0,0,.16); background: #111; }
+.product-shot img { display: block; width: 100%; height: auto; object-fit: contain; border-radius: 26px; border: 1px solid rgba(0,0,0,.08); box-shadow: 0 30px 90px rgba(0,0,0,.16); background: #111; }
 .product-shot figcaption { margin-top: 12px; color: #86868b; font-size: 12px; text-align: center; }
-.product-shot-hero { width: min(1080px,100%); margin: 68px auto 0; }
+.product-shot-hero { width: min(1120px,100%); margin: 68px auto 0; }
 .product-shot-hero img { border-radius: 32px; box-shadow: 0 38px 100px rgba(0,0,0,.22); }
-.product-tour { margin-top: 72px; padding: 38px; border-radius: 34px; background: #fff; border: 1px solid rgba(0,0,0,.06); }
-.product-tour-copy { max-width: 760px; margin: 0 0 28px; }
-.product-tour-copy h3 { margin: 0; font-size: clamp(30px,3.4vw,46px); line-height: 1.03; letter-spacing: -.045em; }
-.product-tour-copy p { color: #6e6e73; font-size: 16px; line-height: 1.55; }
-.product-shot-wide img { border-radius: 22px; box-shadow: 0 22px 60px rgba(0,0,0,.14); background: #f5f5f7; }
-@media (max-width: 860px) { .product-tour { padding: 24px; } }
-@media (max-width: 620px) { .product-shot-hero { margin-top: 44px; } .product-shot img, .product-shot-hero img { border-radius: 20px; } .product-tour { margin-top: 48px; padding: 18px; border-radius: 26px; } }
+.screenshot-section { margin-top: 76px; display: grid; gap: 28px; }
+.screenshot-section-soft { margin-top: 72px; }
+.screenshot-section-trial { max-width: 980px; margin-left: auto; margin-right: auto; }
+.screenshot-copy { max-width: 760px; }
+.screenshot-copy h3 { margin: 0; font-size: clamp(30px,3.4vw,46px); line-height: 1.03; letter-spacing: -.045em; }
+.screenshot-copy p { color: #6e6e73; font-size: 16px; line-height: 1.55; }
+.product-shot-full { width: 100%; }
+.product-shot-window { width: min(920px,100%); margin-left: auto; margin-right: auto; }
+.product-shot-window img { background: #f5f5f7; }
+@media (max-width: 620px) {
+  .product-shot-hero { margin-top: 44px; }
+  .product-shot img, .product-shot-hero img { border-radius: 20px; }
+  .screenshot-section { margin-top: 52px; gap: 22px; }
+}
