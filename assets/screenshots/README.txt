@@ -1,0 +1,1 @@
+Optimized product screenshots for the Smart Launcher public website.
